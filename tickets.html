@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<title>Mount Temple Festival</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+<!--Fonts -->
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+<body class="black">
+  <script src="script.js"></script>
+<div class="navbar">
+<a href="index.html">Home</a>
+<div class="dropdown">
+<button class="dropbtn">Info
+<i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-content">
+<a href="location.html">Location</a>
+<a href="stage1.html">Stage 1</a>
+<a href="stage2.html">Stage 2</a>
+<a href="stage3.html">Stage 3</a>
+<a href="facilities.html">Facilities</a>
+</div>
+</div>
+<a href="tickets.html">Tickets</a>
+<a href="contact.html" style="float:right">Contact</a>
+</div>
+
+<h1 class="white" id="third" style="display:">TICKETS</h1>
+<h1 class="white" id="fourth" style="display:none">ORDER CONFIRMATION</h1>
+
+<hr class="bluehr"> <!-- horizontal line-->
+<br>
+<p class="p3" id="5" style="display:">If you would like to preorder a ticket, please register below.</p>
+<p class="p3" id="6" style="display:none">The information you submitted will appear here:<p>
+  
+<br>
+<div class="ticketcontainer" id="first" style="display:">
+<form onsubmit="return display_details()" method="post" action="#">
+
+  <h5 class="center" style="text-align:center">ORDER A TICKET</h5>
+    
+<br><br>
+
+<label for="name" class="normalbox">Enter your name:</label><br>
+<input type="text" placeholder="*First name" id="firstname" class="namebox" required>
+  
+<input type="text" placeholder="*Last name" id="lastname" class="namebox" required>
+
+<br><br>
+<label>Ticket Quantity:</label>
+
+<br><br>
+
+  <label for="childquantity" style="margin-right:20px; margin-left:10px; font-weight:300; font-size:18px;" >Under 18 (€10) </label>
+  <input type="number" id="childquantity" name="childquantity" min="0" max="5">
+<br><br>
+
+<label for="adultquantity" style="margin-right:30px; margin-left:10px; font-weight:300; font-size:18px;" >Over 18 (€20)</label>
+<input type="number" id="adultquantity" name="adultquantity" min="0" max="5">
+
+<br><br><br>
+<label for="date">Select a Date: (July 29-31)</label><br><br>
+  <input type="date" id="thedate" name="date" min="2022-07-29" max="2022-07-31" required><br><br>
+
+<br>
+<label for="maininterest" class="normalbox">Your Main Interest:</label>
+    <select id="maininterest" class = "dropdown1" >
+      <option disabled selected value> -- Select -- </option>
+      <option value="music">Music</option>
+      <option value="film">Film</option>
+      <option value="art">Art</option>
+      <option value="all">All</option>
+    </select>
+
+<br><br>
+<label class="normalbox">*Are you a student or teacher?</label><br>
+<div class="radio">
+  <input type="radio" name="yesno" id="yes" value="yes" onclick="javascript:yesnoCheck();">Yes<br>
+  <input type="radio" name="yesno" id="no" value="no" onclick="javascript:yesnoCheck();">No<br></label>
+    <div id="ifYes" style="visibility:hidden">
+    <input type='text' size="40" placeholder="Name of School/Institution" id='school' class="normalbox" name="school"></div>
+</div>
+
+<h5 class="center" style="text-align: center">CONTACT DETAILS</h5><br>
+    <input type="text" placeholder="*Email" id="email" class="normalbox" required>
+    <br>
+    <input type="text" placeholder="Phone Number" id="phone" class="normalbox">
+   <br>  
+    <input type="text" placeholder="Address line 1" id="address1" class="normalbox">
+   <br>
+    <input type="text" placeholder="Address line 2" id="address2" class="normalbox">
+   <br>
+    <input type="text" placeholder="Address line 3" id="address3" class="normalbox">
+   <br>
+    <input type="text" placeholder="Eircode" id="eircode" class="normalbox">
+<br><br>
+
+
+<label>How would you like to be contacted? (Check all that apply)</label>
+    <br><br>
+
+<div class="checkbox">
+    <input type= "checkbox"> Email<br>
+    <input type= "checkbox"> Phone<br>
+    <input type= "checkbox"> Text<br>
+    <input type= "checkbox"> Mail<br>
+  </div>
+<br><br>
+  
+<button type="button" onclick="display_details()">Confirm</button>
+
+
+  </form>
+</div>
+
+<br>
+<div id='second'>
+
+<p id="fullname" class="white"></p>
+<p id="date" class="white"></p>
+<p id="discount" class="white"></p>
+<p id="total" class="white"></p>
+</div>
+
+<br><br><br><br><br><br><br><br><br>
+<div class="footer">
+  <h2>© 2021<br></h2>
+</div>
+
+</body>
+</html>

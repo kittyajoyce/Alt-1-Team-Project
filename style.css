@@ -1,0 +1,428 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: rgb(248, 246, 246);
+  margin:0px;
+  bottom: 50px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:40%;
+}
+
+/* header*/
+h1 { 
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 20px
+}
+
+h2 /* footer*/
+ {
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+  padding: 30px; /* space around text*/
+  margin: 0;
+ }
+
+.footer {
+  background-color: rgb(0, 0, 0);
+  bottom: 0; /* no margin at bottom of page*/
+  position: absolute;
+  width: 100%;
+}
+
+
+h3 { /* 2nd header*/
+  color: black;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 25px;
+  margin-bottom: 2px;
+  margin-left: 35px
+}
+
+p {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+/* center paragraph */
+#p1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 25px;
+  color: white;
+}
+
+/* contact form paragraph */
+#p2 {
+  color: rgb(0, 0, 0);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  margin-left:0;
+}
+
+/* thank you page */
+#p3 {
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center
+}
+
+/* tickets page (need id for visiblity)*/
+.p3 {
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center
+}
+
+/* music line up */
+#p4 {
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/*ticket contact form */
+#p6 {
+  color: rgb(0, 0, 0);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  float:left;
+  margin-left:0px;
+}
+
+
+/* home page under image */
+h4 {
+  color: black;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: none;
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+/* contact form header */
+h5 {
+  color: black;
+  font-size: 26px;
+  font-family: 'Roboto Condensed', sans-serif; 
+  font-weight: 400;
+  margin-top: 4px;
+  margin-bottom:2px; 
+}
+
+h6 { /*contact us */
+  margin-top: 4px; 
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+}
+
+/*line-up*/
+h7 {
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+ul {
+  color: rgb(0, 0, 0);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 25px;
+}
+
+li {
+  color: rgb(0, 0, 0);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 30px;
+  margin-left: 60px;
+  margin-right:25px;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+.navbar a {
+  float: left;
+  font-size: 17px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown1 {
+  color: white;
+  background-color: rgb(22, 105, 182);
+  border: none;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;  
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  padding: 14px 16px;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  color: black;
+}
+
+.dropdown1:hover {
+  color: white;
+  background-color: rgb(27, 87, 143);
+}
+
+.bluehr {
+  border: 1px solid rgb(32, 134, 230);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  border-radius: 5px;
+  
+}
+
+.logo {
+  width: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1px;
+}
+
+.background-gradiant {
+background: hsla(24, 87%, 59%, 1);
+background: linear-gradient(315deg, hsla(24, 87%, 59%, 1) 0%, hsla(350, 66%, 55%, 1) 30%, hsla(276, 78%, 36%, 1) 56%, hsla(268, 87%, 37%, 1) 65%, hsla(176, 86%, 44%, 1) 99%);
+background: -moz-linear-gradient(315deg, hsla(24, 87%, 59%, 1) 0%, hsla(350, 66%, 55%, 1) 30%, hsla(276, 78%, 36%, 1) 56%, hsla(268, 87%, 37%, 1) 65%, hsla(176, 86%, 44%, 1) 99%);
+background: -webkit-linear-gradient(315deg, hsla(24, 87%, 59%, 1) 0%, hsla(350, 66%, 55%, 1) 30%, hsla(276, 78%, 36%, 1) 56%, hsla(268, 87%, 37%, 1) 65%, hsla(176, 86%, 44%, 1) 99%);
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F2853C", endColorstr="#D8415B", GradientType=1 );
+}
+
+.bgimage {
+  background-image: url("bgimage.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgcolour {
+  background-color: rgb(42, 45, 46);
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  background-color: black;
+}
+
+label {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 400;
+  float:left;
+  margin-bottom: 8px;
+}
+
+/* Text Area */
+input[type=text], select, textarea {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 17px;
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */ 
+}
+
+.radio {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  margin-right: 20px; 
+  font-weight:300;
+}
+
+.checkbox {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  margin-right: 20px; 
+  font-weight:300;
+}
+
+.normalbox {
+  width: 100%;  /* Full width */
+}
+
+.namebox {
+  width: 45%
+}
+
+
+/* The form */
+.container {
+  border-radius: 5px;  /* rounded corners*/
+  background-color: #f2f2f2; 
+  padding: 30px; 
+  width: 50%;
+  margin-left: auto; /* to center it */
+  margin-right: auto; /* to center it */
+}
+
+.ticketcontainer {
+  border-radius: 5px;  /* rounded corners*/
+  background-color: #f2f2f2; 
+  padding: 30px; 
+  width: 50%;
+  margin-left: auto; /* to center it */
+  margin-right: auto; /* to center it */
+ 
+}
+
+img {
+  width: 30%;
+}
+
+.img2 {
+  width: 60%;
+  float: right;
+  margin-right: 40px;
+  margin-bottom: 25px;
+}
+
+.img3 {
+  width: 9%;
+  float: left;
+  border-radius: 15px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+/*location*/
+.img4 {
+ width: 666px;
+ height:500px;
+ margin-right: 30px;
+margin-left:30px;
+}
+
+iframe {
+  margin-left: 30px;
+}
+
+.box {
+  padding: 10px;
+  background-color: black;
+  width: 40%;
+  display:block; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px; 
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: rgb(22, 105, 182);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(27, 87, 143);
+  color: white;
+}
+
+/* submit button */
+input[type=submit] {
+  font-size: 20px; 
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: rgb(22, 105, 182);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* hover over submit button*/
+input[type=submit]:hover {
+  background-color: rgb(27, 87, 143);
+}
