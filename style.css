@@ -43,19 +43,18 @@ h2 /* footer*/
 }
 
 
-h3 { /* 2nd header*/
+h3 { /* schedule header film page*/
   color: black;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 25px;
-  margin-bottom: 2px;
-  margin-left: 35px
+  font-size: 35px;
+  margin-left: 70px
 }
 
 p {
   font-family: 'Roboto Condensed', sans-serif;
   color: rgb(0, 0, 0);
-  font-size: 25px;
-  margin-left: 35px;
+  font-size: 22px;
+  margin-left: 55px;
   margin-top: 10px;
 }
 
@@ -90,7 +89,7 @@ p {
 .p3 {
   color: white;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 300;
   text-align: center
 }
@@ -105,7 +104,15 @@ p {
   margin-bottom: 16px;
 }
 
-/*ticket contact form */
+#p5 {
+  color: rgb(250, 73, 70);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px; 
+  font-weight:800px;
+  margin-bottom: 0px;
+}
+
+/*ticket form */
 #p6 {
   color: rgb(0, 0, 0);
   font-family: 'Roboto Condensed', sans-serif;
@@ -113,6 +120,31 @@ p {
   font-weight: 300;
   float:left;
   margin-left:0px;
+}
+
+/*order conformation */
+.p7 {
+  color: black;
+  font-family: 'Shippori Antique', sans-serif;  
+  font-size: 20px;
+}
+
+/*order conformation (below)*/
+.p8 {
+  color: black;
+font-family: 'Shippori Antique', sans-serif;  
+font-size: 19px;
+  font-weight: 400;
+}
+
+#p8 {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Shippori Antique', sans-serif;
+  color:white;
+  font-size: 20px;
+  display: block;
+  width:40%;
 }
 
 
@@ -161,10 +193,17 @@ ul {
   font-size: 25px;
 }
 
-li {
+.filmlist {
+  font-family: 'Shippori Antique', sans-serif;
+  color:white;
+  font-size: 20px;
+  margin-left: 16px;
+}
+
+ol {
   color: rgb(0, 0, 0);
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   margin-left: 60px;
   margin-right:25px;
 }
@@ -217,8 +256,17 @@ li {
   background-color: rgb(27, 87, 143);
 }
 
+hr {
+  border: 2px solid white;
+  
+}
+
 .bluehr {
-  border: 1px solid rgb(32, 134, 230);
+  border: 2px solid rgb(32, 134, 230);
+}
+
+.blackhr {
+  border: 3px solid black;
 }
 
 .dropdown-content {
@@ -276,6 +324,18 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F2853C", en
 
 .bgcolour {
   background-color: rgb(42, 45, 46);
+}
+
+.bgcolour1 {
+  background-color: rgb(252, 7, 3);
+}
+
+.bgimg2 {
+  background-image: url("image.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .white {
@@ -372,14 +432,23 @@ img {
 
 /*location*/
 .img4 {
- width: 666px;
- height:500px;
- margin-right: 30px;
-margin-left:30px;
+  /*float: right;
+  margin-right: 30px;
+  margin-left:20px;*/
+  width:40%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+   
 }
 
 iframe {
-  margin-left: 30px;
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 40px;
+  width: 40%;
+  height: 430px;
+  
 }
 
 .box {
@@ -389,7 +458,29 @@ iframe {
   display:block; 
   margin-left: auto;
   margin-right: auto;
+  border-radius: 7px;
 }
+
+.filmbox {
+  padding: 10px;
+  background-color: black;
+  width: 94%;
+  display:block; 
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.ticketbox {
+  padding: 10px;
+  background-color: rgb(81, 163, 240);;
+  width: 80%;
+  display:block; 
+  border-radius: 10px;  
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 button {
   text-align: center;

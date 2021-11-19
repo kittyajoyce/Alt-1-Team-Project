@@ -18,6 +18,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
+
 <body class="black">
   <script src="script.js"></script>
 <div class="navbar">
@@ -65,11 +69,11 @@
 <br><br>
 
   <label for="childquantity" style="margin-right:20px; margin-left:10px; font-weight:300; font-size:18px;" >Under 18 (€10) </label>
-  <input type="number" id="childquantity" name="childquantity" min="0" max="5">
+  <input type="number" id="childquantity" name="childquantity" min="0" max="5" value="0">
 <br><br>
 
-<label for="adultquantity" style="margin-right:30px; margin-left:10px; font-weight:300; font-size:18px;" >Over 18 (€20)</label>
-<input type="number" id="adultquantity" name="adultquantity" min="0" max="5">
+  <label for="adultquantity" style="margin-right:30px; margin-left:10px; font-weight:300; font-size:18px;" >Over 18 (€20)</label>
+<input type="number" id="adultquantity" name="adultquantity" min="0" max="5" value="0">
 
 <br><br><br>
 <label for="date">Select a Date: (July 29-31)</label><br><br>
@@ -79,10 +83,10 @@
 <label for="maininterest" class="normalbox">Your Main Interest:</label>
     <select id="maininterest" class = "dropdown1" >
       <option disabled selected value> -- Select -- </option>
-      <option value="music">Music</option>
-      <option value="film">Film</option>
-      <option value="art">Art</option>
-      <option value="all">All</option>
+      <option value="Music">Music</option>
+      <option value="Film">Film</option>
+      <option value="Art">Art</option>
+      <option value="All">All</option>
     </select>
 
 <br><br>
@@ -126,14 +130,17 @@
   </form>
 </div>
 
-<br>
-<div id='second'>
 
-<p id="fullname" class="white"></p>
-<p id="date" class="white"></p>
-<p id="discount" class="white"></p>
-<p id="total" class="white"></p>
+<div class='ticketbox' id='second' style="display:none">
+<p class = "p7" id="order"></p>
+<br>
+<p class = "p8" id="fullname"></p>
+<p class = "p8" id="mainint"></p>
+<p class = "p8"  id="date"></p>
+<p class = "p8" id="discount"></p>
+<p class = "p8"  id="total"></p>
 </div>
+
 
 <br><br><br><br><br><br><br><br><br>
 <div class="footer">
